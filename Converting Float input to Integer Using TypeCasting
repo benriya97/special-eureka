@@ -1,0 +1,8 @@
+//
+#include <stdio.h>
+main(){
+	float fl;
+	scanf("%f", &fl);   //taking float input from the user
+	int i = (int)fl;    //typecasting float input to integer and assigning it to an integer variable i
+	printf("%d", i);
+}
