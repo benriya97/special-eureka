@@ -1,0 +1,8 @@
+//This program converts a given input alphabet (lower-case or upper-case) into it's ASCII value
+#include <stdio.h>
+main(){
+	char ch;
+	printf("Enter a character");
+	scanf("%c", &ch);
+	printf("\nASCII value of the character entered is %d", ch);
+}
