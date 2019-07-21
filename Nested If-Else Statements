@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int a = 8 ;
+    int b = 4 ;
+    int c = 10 ;
+    if ( a > b )
+    {
+        if ( a > c )
+        {
+             printf ( "a is the greatest number.\n" ) ;
+        }
+    }
+    return 0;
+}
