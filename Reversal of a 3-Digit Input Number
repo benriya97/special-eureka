@@ -1,0 +1,16 @@
+#include <stdio.h>
+main(){
+	int n, first, second, third, reverse;
+	printf("Enter a 3-digit number\n");
+	scanf("%d", &n);
+	/*finding the digits of the entered number n*/
+	first = n/100;     //first digit
+	n = n%100;
+
+	second = n/10;     //second digit
+	third = n%10;      //third digit
+
+	/*reverse number */
+	reverse = third*100 + second*10 + first;
+	printf("reverse number : %d\n", reverse);
+}
