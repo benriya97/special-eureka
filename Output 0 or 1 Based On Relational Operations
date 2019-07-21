@@ -1,0 +1,7 @@
+#include <stdio.h>
+main(){
+	int a, b;
+	scanf("%d %d", &a, &b);
+	printf("%d\n", ((a < 50) && (a < b)));
+  //value of the expression is 1 when both the conditions are true and 0 when atleast one of the conditions is false
+}
