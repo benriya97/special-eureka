@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int a = 10;
+    if(a==30)
+        printf("It is 30\n");
+    else if(a==10)
+        printf("It is 10\n");
+    else if(a==5)
+        printf("It is 5\n");
+    return 0;
+}
