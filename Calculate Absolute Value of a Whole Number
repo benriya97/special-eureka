@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int input;
+    int output;
+    printf("Enter a whole number:");
+    scanf("%d", &input);
+    if(input<0)
+    {
+        output=input*-1;
+        printf("Absolute value of %d is %d", input, output);
+    }
+    else
+    {
+        printf("Absolute value of %d is %d", input, input);
+    }
+}
