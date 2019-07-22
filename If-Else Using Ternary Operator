@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    int mark;
+    printf("Enter mark for subject A out of 100: ");
+    scanf("%d", &mark);
+    (mark > 45) ? printf("You passed subject A!") : printf("You failed suject A");
+}
+//This program checks whether you passed or failed subject A, according to your given input mark
+//This program uses Ternary Operator for If-Else
