@@ -1,0 +1,28 @@
+//A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
+//Ask user for quantity.
+//Suppose, one unit will cost 100.
+//Judge and print total cost for user.
+
+
+#include <stdio.h>
+int main()
+{
+    int quantity;
+    int price;
+    int newprice;
+    printf("How many shirts are you buying? ");
+    scanf("%d", &quantity);
+    price = (quantity * 100);
+    if (price > 1000)
+    {
+        printf("YOU ARE ELIGIBLE FOR DISCOUNT!\n");
+        newprice = price - ((10*price)/100);
+        printf("You only have to pay %d instead of %d!!!", newprice, price);
+    }
+    else
+    {
+        printf("YOU ARE NOT ELIGIBLE FOR DISCOUNT!\n");
+        printf("Please pay normal cost of %d without any discount", price);
+    }
+    return 0;
+}
