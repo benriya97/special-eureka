@@ -1,0 +1,37 @@
+//A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+//Take following input from user: Number of classes held, Number of classes attended.
+//And print percentage of class attended.
+//Is student is allowed to sit in exam or not.
+//Ask user if he/she has medical cause or not ( 'Y' or 'N' ) and print accordingly.
+
+#include <stdio.h>
+int main()
+{
+    int attended;
+    int total;
+    float percent;
+    char mr;
+    printf("Enter number of classes held: ");
+    scanf("%d", &total);
+    printf("Enter number of classes attended: ");
+    scanf("%d", &attended);
+    percent = (attended/(float)total)*100;
+    printf("Your attendance is: %f %% \n", percent);
+    if(percent<75)
+    {
+        printf("Do you have a medical reason ('Y' or 'N'): ");
+        scanf("%s", &mr);
+        if(mr == 'Y')
+        {
+            printf("You will be allowed to sit for the exam due to medical reason.");
+        }
+        else
+        {
+            printf("You will not be allowed to sit for the exam, as you have no medical reason for low attendance.");
+        }
+    }
+    else
+    {
+        printf("You will be allowed to sit for the exam as you have attendance above 75%%");
+    }
+}
