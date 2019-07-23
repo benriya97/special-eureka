@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    for(i=1;;i++)
+    {
+        printf("This is not gonna end!\n");
+    }
+    return 0;
+}
