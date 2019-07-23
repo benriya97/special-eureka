@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    char choice = 'y';
+    while(choice == 'y')
+    {
+        int number;
+        printf("Enter a number to check whether its even or odd:");
+        scanf("%d", &number);
+        if(number%2==0)
+        {
+            printf("You number %d is EVEN!\n", number);
+        }
+        else
+        {
+            printf("You number %d is ODD!\n", number);
+        }
+        printf("Would you like to check another number (y or n):");
+        scanf(" %c", &choice);
+    }
+    return 0;
+}
