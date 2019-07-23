@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int i;
+    for(i=1;i<=5;i++)
+    {
+        printf("Hello There\n");
+        if(i==3)
+        {
+            continue;
+        }
+        printf("i is not 2\n");
+    }
+}
