@@ -1,0 +1,36 @@
+#include <stdio.h>
+int div2(int num);
+void div3(int num);
+
+void main()
+{
+    int num;
+    printf("CHECK WHETHER INPUT IS DIVISIBLE BY 6\n");
+    printf("Enter number: ");
+    scanf("%d", &num);
+    div3(num);
+}
+
+int div2(int num)
+{
+    if(num%2==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+void div3(int num)
+{
+    if((div2(num)==1) && (num%3==0))
+    {
+        printf("Input is divisible by 2 and 3, therefore it's divisible by 6");
+    }
+    else
+    {
+        printf("Input is not divisible by 2 or 3, therefore it's not divisible by 6");
+    }
+}
