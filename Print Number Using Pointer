@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Press any number key");
+    scanf("%d", &num);
+    printf("The number key pressed is %d", *(&num));
+    return 0;
+}
