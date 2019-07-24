@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    int *p;
+    printf("Press any number key: ");
+    scanf("%d", &num);
+    p=&num;
+    printf("Value of the address of pointer of %d is %u", num, &p);
+}
