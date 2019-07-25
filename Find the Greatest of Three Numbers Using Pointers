@@ -1,0 +1,28 @@
+#include <stdio.h>
+int greatest( int *a, int *b, int *c);
+
+int main()
+{
+    int num1, num2, num3, big;
+    printf("Enter three numbers to find the greatest:");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    big=greatest(&num1, &num2, &num3);
+    printf("The greatest of three input numbers are %d", big);
+    return 0;
+}
+
+int greatest( int *a, int *b, int *c)
+{
+    if((*a>*b) && (*a>*c))
+    {
+        return *a;
+    }
+    if((*b>*a) && (*b>*c))
+    {
+        return *b;
+    }
+    if((*c>*a) && (*c>*b))
+    {
+        return *c;
+    }
+}
