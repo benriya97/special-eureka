@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int n[10]; /* declaring n as an array of 10 integers */
+    int i,j;
+    /* initializing elements of array n */
+    for (i = 0; i<10; i++)
+    {
+        printf("Enter value of n[%d]",i);
+        scanf("%d",&n[i]);
+    }
+    /* printing the values of elements of array */
+    for (j = 0; j < 10; j++)
+    {
+        printf("n[%d] = %d\n", j, n[j]);
+    }
+    return 0;
+}
