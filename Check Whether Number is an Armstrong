@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+    int m, n, i=0, power, arm=0, rem, q, x;
+    printf("Enter a number to check whether its an armstrong number:");
+    scanf("%d", &m);
+    n = m;
+    while(n != 0)
+    {
+        n = n/10;
+        i++;
+    }
+    power = i;
+    q = m;
+    while(q != 0)
+    {
+        rem = q%10;
+        arm = arm + pow(rem,power);
+        q = q/10;
+    }
+    if(m==arm)
+    {
+        printf("Entered input is an armstrong");
+    }
+    else
+    {
+        printf("Entered input is not an armstrong");
+    }
+}
