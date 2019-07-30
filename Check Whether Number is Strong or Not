@@ -1,0 +1,36 @@
+#include <stdio.h>
+int factorial(int a);
+
+int main()
+{
+    int x, y, f, n, m=0;
+    printf("Enter a number to check whether it's a strong number:");
+    scanf("%d", &n);
+    x = n;
+    while (x != 0)
+    {
+        y=x%10;
+        f=factorial(y);
+        m=m+f;
+        x=x/10;
+    }
+    if(m==n)
+    {
+        printf("%d is a strong number", n);
+    }
+    else
+    {
+        printf("%d is not a strong number", n);
+    }
+}
+
+int factorial(int a)
+{
+    int i, j=1;
+    for(i=1;i<=a;i++)
+    {
+        j = j * i;
+    }
+    return j;
+}
+
